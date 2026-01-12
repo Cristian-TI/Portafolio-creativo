@@ -167,3 +167,42 @@ body {
     color: var(--gris);
     margin-top: 8px;
 }
+
+.redes {
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social {
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    background: linear-gradient(135deg, #0f2a44, #1f8fff);
+    box-shadow: 0 0 20px rgba(31, 143, 255, 0.4);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.social:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(31, 143, 255, 0.8);
+}
+
+/* pequeños detalles */
+.social.ig {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.social.fb {
+    background: linear-gradient(135deg, #1877f2, #0f4dc7);
+}
