@@ -206,3 +206,80 @@ body {
 .social.fb {
     background: linear-gradient(135deg, #1877f2, #0f4dc7);
 }
+
+.hero h1 {
+    animation: titleGlow 2s ease forwards;
+}
+
+@keyframes titleGlow {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        text-shadow: 0 0 30px rgba(95, 179, 255, 0.6);
+    }
+}
+
+.linea {
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--azul-brillo), transparent);
+    margin: 20px auto;
+    animation: expandLine 1.5s ease forwards;
+}
+
+@keyframes expandLine {
+    to {
+        width: 220px;
+    }
+}
+
+.hero {
+    background-size: 200% 200%;
+    animation: bgMove 8s ease infinite;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(1.2);
+}
+
+.social span {
+    font-size: 0.95rem;
+}
+
+.social.wa {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+}
+
+.social.wa:hover {
+    box-shadow: 0 0 35px rgba(37, 211, 102, 0.9);
+}
